@@ -39,6 +39,7 @@ public class LoginGUI {
 
             if(service.authenticate(user, pass)) {
                 result.setText("Login Successful");
+                new HomePage(); 
             } else {
                 result.setText("Login Failed");
             }
